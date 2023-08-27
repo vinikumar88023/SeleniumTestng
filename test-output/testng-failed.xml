@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="productName" value="Samsung Mobile"/>
+    <classes>
+      <class name="crosbrowserTest">
+        <methods>
+          <include name="testcase2" invocation-numbers="0"/>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- crosbrowserTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="productName" value="Samsung Mobile"/>
+    <classes>
+      <class name="crosbrowserTest">
+        <methods>
+          <include name="testcase2" invocation-numbers="0"/>
+          <include name="testcase1"/>
+        </methods>
+      </class> <!-- crosbrowserTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
