@@ -35,6 +35,6 @@ public class testngexample {
     
     @AfterClass
     public void Aftermethod() {
-		System.out.println("We are printing the After method name ---------------------------------");
+		System.out.println("We are printing after class ---------------------------------");
 	}
 }
